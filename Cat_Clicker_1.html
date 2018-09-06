@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+       <div>
+            <label class="catName" id="catName"></label>
+            <img class="catImg" id="catImg" src="" />
+            <label>Number of clicks: </label>
+            <label id="num"></label>
+        </div>
+        <div>
+            List of Cats
+            <ol id="catList">                
+            </ol>
+        </div> 
+        <script type="text/javascript" src="catclicker.js"></script>
+        <!-- <script>
+
+            var cats = [{name: 'Cat1', src: 'cat.jpg'},{name: 'Cat2', src: 'cat2.jpg'}, {name: 'Cat3', src: 'cat3.jpg'}, 
+            {name: 'Cat4', src: 'cat4.jpg'}, {name: 'Cat5', src: 'cat5.jpg'}];
+
+            // Let's loop over the numbers in our array
+            for (var i = 0; i < cats.length; i++) {
+
+                // This is the number we're on...
+                var cat = cats[i];
+
+                // We're creating a DOM element for the number
+                var li = document.createElement('li');
+                li.textContent = cat.name;
+                
+                // ... and when we click, alert the value of `num`
+                li.addEventListener('click', (function(cat) {
+                    return function() {
+                        $('#catName')[0].innerText = cat.name;
+                        $(".catImg")[0].src = cat.src;
+                        $('#num')[0].text = 0;
+                        cat.clicks = 0;
+                        $('#catImg').click(function(e) {
+                            cat.clicks++;
+                            $('#num')[0].innerHTML = cat.clicks;
+                        });
+                    };
+                })(cat));
+
+               //  li.addEventListener('click', e => alert('hey'));
+
+                // finally, let's add this element to the document
+                $('#catList').append(li);
+              //  document.body.appendChild(li);
+            };
+        </script> -->
+    </body>
+</html>
+
